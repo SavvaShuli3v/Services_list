@@ -13,6 +13,11 @@ final class ServicesViewController: UIViewController {
 
   private let viewModel: ServicesViewModel
 
+  private lazy var activityIndicator: UIActivityIndicatorView = {
+    let activityIndicator = UIActivityIndicatorView()
+    activityIndicator.style = .large
+    return activityIndicator
+  }()
   private lazy var collectionView = ServicesCollectionView()
 
   private var subscriptions = Set<AnyCancellable>()
@@ -38,6 +43,12 @@ final class ServicesViewController: UIViewController {
         guard let self else { return }
 
         self.collectionView.model = viewState
+
+        if viewState.isLoading {
+          self.activityIndicator.startAnimating()
+        } else {
+          self.activityIndicator.stopAnimating()
+        }
       }
       .store(in: &subscriptions)
 
@@ -57,13 +68,17 @@ extension ServicesViewController {
   }
 
   private func setupHierarchy() {
-    view.addSubview(collectionView)
+    view.addSubviews([collectionView, activityIndicator])
   }
 
   private func layout() {
     collectionView.snp.makeConstraints {
       $0.top.bottom.equalToSuperview()
       $0.leading.trailing.equalTo(view.safeAreaLayoutGuide)
+    }
+
+    activityIndicator.snp.makeConstraints {
+      $0.edges.equalToSuperview()
     }
   }
   
