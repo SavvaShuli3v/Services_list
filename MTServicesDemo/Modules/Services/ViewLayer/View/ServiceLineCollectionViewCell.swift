@@ -63,6 +63,12 @@ final class ServiceLineCollectionViewCell: UICollectionViewCell {
     fatalError("init(coder:) has not been implemented")
   }
 
+  override func prepareForReuse() {
+    super.prepareForReuse()
+    self.imageView.image = nil
+    self.titleLabel.text = nil
+  }
+
   private func updateUI() {
     guard let model else {
       imageView.image = nil
@@ -79,7 +85,7 @@ final class ServiceLineCollectionViewCell: UICollectionViewCell {
         currentModel.imageId == model.imageId
       else { return }
 
-      self.imageView.image = image
+      self.imageView.setImage(image)
     }
   }
 

@@ -51,6 +51,13 @@ final class ServiceBoxCollectionViewCell: UICollectionViewCell {
     fatalError("init(coder:) has not been implemented")
   }
 
+  override func prepareForReuse() {
+    super.prepareForReuse()
+    self.imageView.image = nil
+    self.titleLabel.text = nil
+    self.titleLabel.textColor = nil
+  }
+
   override func layoutSubviews() {
     super.layoutSubviews()
 
@@ -84,7 +91,7 @@ final class ServiceBoxCollectionViewCell: UICollectionViewCell {
         currentModel.imageId == model.imageId
       else { return }
 
-      self.imageView.image = image
+      self.imageView.setImage(image)
     }
   }
 
