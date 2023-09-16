@@ -72,6 +72,7 @@ final class ServicesCollectionView: UICollectionView {
 
   private let estimatedWidth = 160.0
   private let cellMarginSize = 16.0
+  private let headerId = "headerId"
   private let boxCellId = "boxCellId"
   private let lineCellId = "lineCellId"
 
@@ -87,9 +88,11 @@ final class ServicesCollectionView: UICollectionView {
     flowLayout.minimumLineSpacing = CGFloat(cellMarginSize)
     flowLayout.minimumInteritemSpacing = CGFloat(cellMarginSize)
     super.init(frame: .zero, collectionViewLayout: flowLayout)
-    delegate = self
+    register(ServicesCollectionViewHeader.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: headerId)
     register(ServiceBoxCollectionViewCell.self, forCellWithReuseIdentifier: boxCellId)
     register(ServiceLineCollectionViewCell.self, forCellWithReuseIdentifier: lineCellId)
+    configureHeaders()
+    delegate = self
   }
 
   required init?(coder: NSCoder) {
@@ -131,6 +134,34 @@ final class ServicesCollectionView: UICollectionView {
 //      self.invalidateIntrinsicContentSize()
 //    }
 //  }
+
+  func configureHeaders() {
+    diffableDataSource.supplementaryViewProvider = { [weak self] (
+      collectionView: UICollectionView,
+      kind: String,
+      indexPath: IndexPath
+    ) -> UICollectionReusableView? in
+      guard let self else { return nil }
+
+      let header = self.dequeueReusableSupplementaryView(
+        ofKind: UICollectionView.elementKindSectionHeader,
+        withReuseIdentifier: self.headerId,
+        for: indexPath
+      ) as! ServicesCollectionViewHeader
+
+      guard let section = diffableDataSource.sectionIdentifier(for: indexPath.section) else { return nil }
+
+      switch section {
+      case .activatedServices:
+        header.titleLabel.text = "Активные сервисы"
+
+      case .nonactivatedServices:
+        header.titleLabel.text = "Все сервисы"
+      }
+
+      return header
+    }
+  }
 
 }
 
@@ -187,6 +218,10 @@ extension ServicesCollectionView: UICollectionViewDelegateFlowLayout {
     case .nonactivatedServices:
       return UIEdgeInsets(top: 0, left: 16, bottom: 16, right: 16)
     }
+  }
+
+  func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+    return CGSize(width: bounds.width, height: 80)
   }
   
 }

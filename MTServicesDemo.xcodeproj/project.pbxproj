@@ -25,6 +25,7 @@
 		4DA3A7042AB61FFE00EDD914 /* ServiceLineCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA3A7032AB61FFE00EDD914 /* ServiceLineCollectionViewCell.swift */; };
 		4DA3A7082AB649D000EDD914 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA3A7072AB649D000EDD914 /* Images.swift */; };
 		4DA3A70E2AB64ADC00EDD914 /* ServicesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA3A70D2AB64ADC00EDD914 /* ServicesCoordinator.swift */; };
+		4DA3A7102AB6510400EDD914 /* ServicesCollectionViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA3A70F2AB6510400EDD914 /* ServicesCollectionViewHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		4DA3A7032AB61FFE00EDD914 /* ServiceLineCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLineCollectionViewCell.swift; sourceTree = "<group>"; };
 		4DA3A7072AB649D000EDD914 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		4DA3A70D2AB64ADC00EDD914 /* ServicesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesCoordinator.swift; sourceTree = "<group>"; };
+		4DA3A70F2AB6510400EDD914 /* ServicesCollectionViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesCollectionViewHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				4DA3A6E42AB4D0AC00EDD914 /* ServicesViewController.swift */,
+				4DA3A70F2AB6510400EDD914 /* ServicesCollectionViewHeader.swift */,
 				4DA3A6F52AB4DA9100EDD914 /* ServicesCollectionView.swift */,
 				4DA3A6FA2AB4EA8E00EDD914 /* ServiceBoxCollectionViewCell.swift */,
 				4DA3A7032AB61FFE00EDD914 /* ServiceLineCollectionViewCell.swift */,
@@ -303,6 +306,7 @@
 				4D1C82362AB4840D0059B63C /* AppDelegate.swift in Sources */,
 				4DA3A7042AB61FFE00EDD914 /* ServiceLineCollectionViewCell.swift in Sources */,
 				4DA3A6F62AB4DA9100EDD914 /* ServicesCollectionView.swift in Sources */,
+				4DA3A7102AB6510400EDD914 /* ServicesCollectionViewHeader.swift in Sources */,
 				4DA3A6E72AB4D0D200EDD914 /* ServicesViewModel.swift in Sources */,
 				4DA3A6E92AB4D13600EDD914 /* ServicesViewState.swift in Sources */,
 				4DA3A7082AB649D000EDD914 /* Images.swift in Sources */,

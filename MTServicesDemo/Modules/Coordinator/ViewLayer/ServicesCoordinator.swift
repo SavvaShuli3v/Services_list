@@ -17,7 +17,7 @@ final class ServicesCoordinator {
 
   func showServices() {
     let viewController = ServicesFactory().makeViewController()
-    viewController.title = "Сервисы"
+    viewController.title = "Московский транспорт"
     navigationController?.pushViewController(
       viewController,
       animated: false
