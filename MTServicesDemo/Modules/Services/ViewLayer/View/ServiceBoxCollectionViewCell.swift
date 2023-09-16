@@ -28,6 +28,20 @@ final class ServiceBoxCollectionViewCell: UICollectionViewCell {
     return label
   }()
 
+  override var isHighlighted: Bool {
+    didSet {
+      UIView.animate(
+        withDuration: 0.15,
+        delay: !isHighlighted ? 0.15 : 0.0,
+        options: .allowUserInteraction,
+        animations: {
+          self.transform = self.isHighlighted ? CGAffineTransform(scaleX: 0.90, y: 0.90) : CGAffineTransform.identity
+        },
+        completion: nil
+      )
+    }
+  }
+
   override init(frame: CGRect) {
     super.init(frame: frame)
     setupUI()

@@ -26,6 +26,7 @@
 		4DA3A7082AB649D000EDD914 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA3A7072AB649D000EDD914 /* Images.swift */; };
 		4DA3A70E2AB64ADC00EDD914 /* ServicesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA3A70D2AB64ADC00EDD914 /* ServicesCoordinator.swift */; };
 		4DA3A7102AB6510400EDD914 /* ServicesCollectionViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA3A70F2AB6510400EDD914 /* ServicesCollectionViewHeader.swift */; };
+		4DEF012F2AB65E2300856BB6 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEF012E2AB65E2300856BB6 /* UIColor+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		4DA3A7072AB649D000EDD914 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		4DA3A70D2AB64ADC00EDD914 /* ServicesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesCoordinator.swift; sourceTree = "<group>"; };
 		4DA3A70F2AB6510400EDD914 /* ServicesCollectionViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesCollectionViewHeader.swift; sourceTree = "<group>"; };
+		4DEF012E2AB65E2300856BB6 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +199,7 @@
 				4DA3A6EB2AB4D20500EDD914 /* String+Extension.swift */,
 				4DA3A6FC2AB4F0BC00EDD914 /* UIView+Extension.swift */,
 				4DA3A6FE2AB4FDE200EDD914 /* UIImage+Extension.swift */,
+				4DEF012E2AB65E2300856BB6 /* UIColor+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 				4DA3A6E52AB4D0AC00EDD914 /* ServicesViewController.swift in Sources */,
 				4D1C82362AB4840D0059B63C /* AppDelegate.swift in Sources */,
 				4DA3A7042AB61FFE00EDD914 /* ServiceLineCollectionViewCell.swift in Sources */,
+				4DEF012F2AB65E2300856BB6 /* UIColor+Extension.swift in Sources */,
 				4DA3A6F62AB4DA9100EDD914 /* ServicesCollectionView.swift in Sources */,
 				4DA3A7102AB6510400EDD914 /* ServicesCollectionViewHeader.swift in Sources */,
 				4DA3A6E72AB4D0D200EDD914 /* ServicesViewModel.swift in Sources */,

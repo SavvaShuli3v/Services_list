@@ -59,12 +59,12 @@ final class ServicesCollectionView: UICollectionView {
 
     switch itemIdentifier {
     case .activatedService(let model):
-      let cell = dequeueReusableCell(withReuseIdentifier: lineCellId, for: indexPath) as! ServiceLineCollectionViewCell
+      let cell = self.dequeueReusableCell(withReuseIdentifier: self.lineCellId, for: indexPath) as! ServiceLineCollectionViewCell
       cell.model = model
       return cell
       
     case .nonactivatedService(let model):
-      let cell = dequeueReusableCell(withReuseIdentifier: boxCellId, for: indexPath) as! ServiceBoxCollectionViewCell
+      let cell = self.dequeueReusableCell(withReuseIdentifier: self.boxCellId, for: indexPath) as! ServiceBoxCollectionViewCell
       cell.model = model
       return cell
     }
@@ -149,7 +149,7 @@ final class ServicesCollectionView: UICollectionView {
         for: indexPath
       ) as! ServicesCollectionViewHeader
 
-      guard let section = diffableDataSource.sectionIdentifier(for: indexPath.section) else { return nil }
+      guard let section = self.diffableDataSource.sectionIdentifier(for: indexPath.section) else { return nil }
 
       switch section {
       case .activatedServices:

@@ -37,7 +37,7 @@ final class ServicesViewController: UIViewController {
       .sink { [weak self] viewState in
         guard let self else { return }
 
-        collectionView.model = viewState
+        self.collectionView.model = viewState
       }
       .store(in: &subscriptions)
 
@@ -51,18 +51,7 @@ final class ServicesViewController: UIViewController {
 
 extension ServicesViewController {
   private func setupUI() {
-    view.backgroundColor = UIColor(dynamicProvider: { traitCollection in
-      switch traitCollection.userInterfaceStyle {
-      case .unspecified:
-        return .white
-      case .light:
-        return .white
-      case .dark:
-        return .black
-      @unknown default:
-        return .white
-      }
-    })
+    view.backgroundColor = UIColor(lightTheme: .white, darkTheme: .black) 
     setupHierarchy()
     layout()
   }

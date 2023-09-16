@@ -34,6 +34,26 @@ final class ServiceLineCollectionViewCell: UICollectionViewCell {
     return imageView
   }()
 
+  private let selectedColor = UIColor(
+    lightTheme: UIColor(red: 0.961, green: 0.961, blue: 0.961, alpha: 1),
+    darkTheme: UIColor(red: 0.171, green: 0.171, blue: 0.171, alpha: 1)
+  )
+  private let defaultColor = UIColor(lightTheme: .white, darkTheme: .black)
+
+  override var isHighlighted: Bool {
+    didSet {
+      UIView.animate(
+        withDuration: 0.15,
+        delay: !isHighlighted ? 0.15 : 0.0,
+        options: .allowUserInteraction,
+        animations: {
+          self.backgroundColor = self.isHighlighted ? self.selectedColor : self.defaultColor
+        },
+        completion: nil
+      )
+    }
+  }
+
   override init(frame: CGRect) {
     super.init(frame: frame)
     setupUI()
