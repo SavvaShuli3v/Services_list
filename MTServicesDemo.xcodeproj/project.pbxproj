@@ -9,21 +9,44 @@
 /* Begin PBXBuildFile section */
 		4D1C82362AB4840D0059B63C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1C82352AB4840D0059B63C /* AppDelegate.swift */; };
 		4D1C82382AB4840D0059B63C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1C82372AB4840D0059B63C /* SceneDelegate.swift */; };
-		4D1C823A2AB4840D0059B63C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1C82392AB4840D0059B63C /* ViewController.swift */; };
-		4D1C823D2AB4840D0059B63C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D1C823B2AB4840D0059B63C /* Main.storyboard */; };
 		4D1C823F2AB4840D0059B63C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D1C823E2AB4840D0059B63C /* Assets.xcassets */; };
 		4D1C82422AB4840D0059B63C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D1C82402AB4840D0059B63C /* LaunchScreen.storyboard */; };
+		4DA3A6E52AB4D0AC00EDD914 /* ServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA3A6E42AB4D0AC00EDD914 /* ServicesViewController.swift */; };
+		4DA3A6E72AB4D0D200EDD914 /* ServicesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA3A6E62AB4D0D200EDD914 /* ServicesViewModel.swift */; };
+		4DA3A6E92AB4D13600EDD914 /* ServicesViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA3A6E82AB4D13600EDD914 /* ServicesViewState.swift */; };
+		4DA3A6EC2AB4D20500EDD914 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA3A6EB2AB4D20500EDD914 /* String+Extension.swift */; };
+		4DA3A6F02AB4D7F500EDD914 /* ServicesFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA3A6EF2AB4D7F500EDD914 /* ServicesFactory.swift */; };
+		4DA3A6F62AB4DA9100EDD914 /* ServicesCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA3A6F52AB4DA9100EDD914 /* ServicesCollectionView.swift */; };
+		4DA3A6F92AB4DB4200EDD914 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4DA3A6F82AB4DB4200EDD914 /* SnapKit */; };
+		4DA3A6FB2AB4EA8E00EDD914 /* ServiceBoxCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA3A6FA2AB4EA8E00EDD914 /* ServiceBoxCollectionViewCell.swift */; };
+		4DA3A6FD2AB4F0BC00EDD914 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA3A6FC2AB4F0BC00EDD914 /* UIView+Extension.swift */; };
+		4DA3A6FF2AB4FDE200EDD914 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA3A6FE2AB4FDE200EDD914 /* UIImage+Extension.swift */; };
+		4DA3A7022AB6021F00EDD914 /* ImageFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA3A7012AB6021F00EDD914 /* ImageFinder.swift */; };
+		4DA3A7042AB61FFE00EDD914 /* ServiceLineCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA3A7032AB61FFE00EDD914 /* ServiceLineCollectionViewCell.swift */; };
+		4DA3A7082AB649D000EDD914 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA3A7072AB649D000EDD914 /* Images.swift */; };
+		4DA3A70E2AB64ADC00EDD914 /* ServicesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA3A70D2AB64ADC00EDD914 /* ServicesCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4D1C82322AB4840D0059B63C /* MTServicesDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MTServicesDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D1C82352AB4840D0059B63C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D1C82372AB4840D0059B63C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4D1C82392AB4840D0059B63C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4D1C823C2AB4840D0059B63C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4D1C823E2AB4840D0059B63C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D1C82412AB4840D0059B63C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D1C82432AB4840E0059B63C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DA3A6E42AB4D0AC00EDD914 /* ServicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesViewController.swift; sourceTree = "<group>"; };
+		4DA3A6E62AB4D0D200EDD914 /* ServicesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesViewModel.swift; sourceTree = "<group>"; };
+		4DA3A6E82AB4D13600EDD914 /* ServicesViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesViewState.swift; sourceTree = "<group>"; };
+		4DA3A6EB2AB4D20500EDD914 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		4DA3A6EF2AB4D7F500EDD914 /* ServicesFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesFactory.swift; sourceTree = "<group>"; };
+		4DA3A6F52AB4DA9100EDD914 /* ServicesCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesCollectionView.swift; sourceTree = "<group>"; };
+		4DA3A6FA2AB4EA8E00EDD914 /* ServiceBoxCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceBoxCollectionViewCell.swift; sourceTree = "<group>"; };
+		4DA3A6FC2AB4F0BC00EDD914 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		4DA3A6FE2AB4FDE200EDD914 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		4DA3A7012AB6021F00EDD914 /* ImageFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFinder.swift; sourceTree = "<group>"; };
+		4DA3A7032AB61FFE00EDD914 /* ServiceLineCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLineCollectionViewCell.swift; sourceTree = "<group>"; };
+		4DA3A7072AB649D000EDD914 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		4DA3A70D2AB64ADC00EDD914 /* ServicesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DA3A6F92AB4DB4200EDD914 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +80,146 @@
 		4D1C82342AB4840D0059B63C /* MTServicesDemo */ = {
 			isa = PBXGroup;
 			children = (
+				4D1C82432AB4840E0059B63C /* Info.plist */,
 				4D1C82352AB4840D0059B63C /* AppDelegate.swift */,
 				4D1C82372AB4840D0059B63C /* SceneDelegate.swift */,
-				4D1C82392AB4840D0059B63C /* ViewController.swift */,
-				4D1C823B2AB4840D0059B63C /* Main.storyboard */,
-				4D1C823E2AB4840D0059B63C /* Assets.xcassets */,
-				4D1C82402AB4840D0059B63C /* LaunchScreen.storyboard */,
-				4D1C82432AB4840E0059B63C /* Info.plist */,
+				4D1C82492AB484750059B63C /* Shared */,
+				4D1C824B2AB4848A0059B63C /* Modules */,
+				4D1C824A2AB4847A0059B63C /* Resources */,
 			);
 			path = MTServicesDemo;
+			sourceTree = "<group>";
+		};
+		4D1C82492AB484750059B63C /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				4DA3A6EA2AB4D15A00EDD914 /* CommonLayer */,
+				4DA3A7002AB6020200EDD914 /* ServiceLayer */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		4D1C824A2AB4847A0059B63C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4D1C823E2AB4840D0059B63C /* Assets.xcassets */,
+				4D1C82402AB4840D0059B63C /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4D1C824B2AB4848A0059B63C /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				4DA3A70B2AB64AC200EDD914 /* Coordinator */,
+				4DA3A6E12AB4D06400EDD914 /* Services */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		4DA3A6E12AB4D06400EDD914 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4DA3A6E32AB4D09000EDD914 /* AppLayer */,
+				4DA3A6E22AB4D08300EDD914 /* ViewLayer */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		4DA3A6E22AB4D08300EDD914 /* ViewLayer */ = {
+			isa = PBXGroup;
+			children = (
+				4DA3A6F22AB4DA6000EDD914 /* Model */,
+				4DA3A6F32AB4DA6700EDD914 /* View */,
+				4DA3A6F42AB4DA7100EDD914 /* ViewModel */,
+			);
+			path = ViewLayer;
+			sourceTree = "<group>";
+		};
+		4DA3A6E32AB4D09000EDD914 /* AppLayer */ = {
+			isa = PBXGroup;
+			children = (
+				4DA3A6EF2AB4D7F500EDD914 /* ServicesFactory.swift */,
+			);
+			path = AppLayer;
+			sourceTree = "<group>";
+		};
+		4DA3A6EA2AB4D15A00EDD914 /* CommonLayer */ = {
+			isa = PBXGroup;
+			children = (
+				4DA3A7062AB649C500EDD914 /* Resources */,
+				4DA3A7052AB649BA00EDD914 /* Extensions */,
+			);
+			path = CommonLayer;
+			sourceTree = "<group>";
+		};
+		4DA3A6F22AB4DA6000EDD914 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4DA3A6E82AB4D13600EDD914 /* ServicesViewState.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4DA3A6F32AB4DA6700EDD914 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4DA3A6E42AB4D0AC00EDD914 /* ServicesViewController.swift */,
+				4DA3A6F52AB4DA9100EDD914 /* ServicesCollectionView.swift */,
+				4DA3A6FA2AB4EA8E00EDD914 /* ServiceBoxCollectionViewCell.swift */,
+				4DA3A7032AB61FFE00EDD914 /* ServiceLineCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4DA3A6F42AB4DA7100EDD914 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4DA3A6E62AB4D0D200EDD914 /* ServicesViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4DA3A7002AB6020200EDD914 /* ServiceLayer */ = {
+			isa = PBXGroup;
+			children = (
+				4DA3A7012AB6021F00EDD914 /* ImageFinder.swift */,
+			);
+			path = ServiceLayer;
+			sourceTree = "<group>";
+		};
+		4DA3A7052AB649BA00EDD914 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4DA3A6EB2AB4D20500EDD914 /* String+Extension.swift */,
+				4DA3A6FC2AB4F0BC00EDD914 /* UIView+Extension.swift */,
+				4DA3A6FE2AB4FDE200EDD914 /* UIImage+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4DA3A7062AB649C500EDD914 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4DA3A7072AB649D000EDD914 /* Images.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4DA3A70B2AB64AC200EDD914 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				4DA3A70C2AB64ACD00EDD914 /* ViewLayer */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		4DA3A70C2AB64ACD00EDD914 /* ViewLayer */ = {
+			isa = PBXGroup;
+			children = (
+				4DA3A70D2AB64ADC00EDD914 /* ServicesCoordinator.swift */,
+			);
+			path = ViewLayer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +238,9 @@
 			dependencies = (
 			);
 			name = MTServicesDemo;
+			packageProductDependencies = (
+				4DA3A6F82AB4DB4200EDD914 /* SnapKit */,
+			);
 			productName = MTServicesDemo;
 			productReference = 4D1C82322AB4840D0059B63C /* MTServicesDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +269,9 @@
 				Base,
 			);
 			mainGroup = 4D1C82292AB4840D0059B63C;
+			packageReferences = (
+				4DA3A6F72AB4DB4200EDD914 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 4D1C82332AB4840D0059B63C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +288,6 @@
 			files = (
 				4D1C82422AB4840D0059B63C /* LaunchScreen.storyboard in Resources */,
 				4D1C823F2AB4840D0059B63C /* Assets.xcassets in Resources */,
-				4D1C823D2AB4840D0059B63C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +298,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D1C823A2AB4840D0059B63C /* ViewController.swift in Sources */,
+				4DA3A6FB2AB4EA8E00EDD914 /* ServiceBoxCollectionViewCell.swift in Sources */,
+				4DA3A6E52AB4D0AC00EDD914 /* ServicesViewController.swift in Sources */,
 				4D1C82362AB4840D0059B63C /* AppDelegate.swift in Sources */,
+				4DA3A7042AB61FFE00EDD914 /* ServiceLineCollectionViewCell.swift in Sources */,
+				4DA3A6F62AB4DA9100EDD914 /* ServicesCollectionView.swift in Sources */,
+				4DA3A6E72AB4D0D200EDD914 /* ServicesViewModel.swift in Sources */,
+				4DA3A6E92AB4D13600EDD914 /* ServicesViewState.swift in Sources */,
+				4DA3A7082AB649D000EDD914 /* Images.swift in Sources */,
+				4DA3A6EC2AB4D20500EDD914 /* String+Extension.swift in Sources */,
+				4DA3A7022AB6021F00EDD914 /* ImageFinder.swift in Sources */,
+				4DA3A6F02AB4D7F500EDD914 /* ServicesFactory.swift in Sources */,
+				4DA3A6FD2AB4F0BC00EDD914 /* UIView+Extension.swift in Sources */,
+				4DA3A6FF2AB4FDE200EDD914 /* UIImage+Extension.swift in Sources */,
 				4D1C82382AB4840D0059B63C /* SceneDelegate.swift in Sources */,
+				4DA3A70E2AB64ADC00EDD914 /* ServicesCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		4D1C823B2AB4840D0059B63C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4D1C823C2AB4840D0059B63C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4D1C82402AB4840D0059B63C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +456,6 @@
 				INFOPLIST_FILE = MTServicesDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +483,6 @@
 				INFOPLIST_FILE = MTServicesDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -358,6 +520,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4DA3A6F72AB4DB4200EDD914 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4DA3A6F82AB4DB4200EDD914 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4DA3A6F72AB4DB4200EDD914 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4D1C822A2AB4840D0059B63C /* Project object */;
 }
