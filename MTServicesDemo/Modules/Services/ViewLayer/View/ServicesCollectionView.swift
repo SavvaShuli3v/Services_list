@@ -8,26 +8,32 @@
 import UIKit
 
 struct ActivatedServiceCellModel: Hashable {
-  let serviceId: String
+  let service: Service
   let title: String
   let imageId: String
 }
 
 struct NonactivatedServiceCellModel: Hashable {
-  let serviceId: String
+  let service: Service
   let title: String
   let titleColor: UIColor
   let color: UIColor
   let imageId: String
 }
 
-final class ServicesCollectionView: UICollectionView {
+protocol ServicesCollectionViewDelegate: AnyObject {
+  func didTapToActivatedService(with model: ActivatedServiceCellModel)
+  func didTapToNonactivatedService(with model: NonactivatedServiceCellModel)
+}
 
+final class ServicesCollectionView: UICollectionView {
   var model: ServicesViewState = .default {
     didSet {
       apply()
     }
   }
+
+  weak var servicesDelegate: ServicesCollectionViewDelegate?
 
   // MARK: - UICollectionViewDiffableDataSource
 
@@ -169,7 +175,15 @@ final class ServicesCollectionView: UICollectionView {
 
 extension ServicesCollectionView: UICollectionViewDelegate {
   func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-    guard let _ = diffableDataSource.itemIdentifier(for: indexPath) else { return }
+    guard let item = diffableDataSource.itemIdentifier(for: indexPath) else { return }
+
+    switch item {
+    case .activatedService(let model):
+      servicesDelegate?.didTapToActivatedService(with: model)
+
+    case .nonactivatedService(let model):
+      servicesDelegate?.didTapToNonactivatedService(with: model)
+    }
   }
 }
 

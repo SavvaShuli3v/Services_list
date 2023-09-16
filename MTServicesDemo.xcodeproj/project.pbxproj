@@ -27,6 +27,7 @@
 		4DA3A70E2AB64ADC00EDD914 /* ServicesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA3A70D2AB64ADC00EDD914 /* ServicesCoordinator.swift */; };
 		4DA3A7102AB6510400EDD914 /* ServicesCollectionViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA3A70F2AB6510400EDD914 /* ServicesCollectionViewHeader.swift */; };
 		4DEF012F2AB65E2300856BB6 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEF012E2AB65E2300856BB6 /* UIColor+Extension.swift */; };
+		4DEF01322AB6673E00856BB6 /* ServicesOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEF01312AB6673E00856BB6 /* ServicesOperator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		4DA3A70D2AB64ADC00EDD914 /* ServicesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesCoordinator.swift; sourceTree = "<group>"; };
 		4DA3A70F2AB6510400EDD914 /* ServicesCollectionViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesCollectionViewHeader.swift; sourceTree = "<group>"; };
 		4DEF012E2AB65E2300856BB6 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		4DEF01312AB6673E00856BB6 /* ServicesOperator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesOperator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 			children = (
 				4DA3A6E32AB4D09000EDD914 /* AppLayer */,
 				4DA3A6E22AB4D08300EDD914 /* ViewLayer */,
+				4DEF01302AB6668300856BB6 /* ServiceLayer */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -228,6 +231,14 @@
 			path = ViewLayer;
 			sourceTree = "<group>";
 		};
+		4DEF01302AB6668300856BB6 /* ServiceLayer */ = {
+			isa = PBXGroup;
+			children = (
+				4DEF01312AB6673E00856BB6 /* ServicesOperator.swift */,
+			);
+			path = ServiceLayer;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -317,6 +328,7 @@
 				4DA3A6EC2AB4D20500EDD914 /* String+Extension.swift in Sources */,
 				4DA3A7022AB6021F00EDD914 /* ImageFinder.swift in Sources */,
 				4DA3A6F02AB4D7F500EDD914 /* ServicesFactory.swift in Sources */,
+				4DEF01322AB6673E00856BB6 /* ServicesOperator.swift in Sources */,
 				4DA3A6FD2AB4F0BC00EDD914 /* UIView+Extension.swift in Sources */,
 				4DA3A6FF2AB4FDE200EDD914 /* UIImage+Extension.swift in Sources */,
 				4D1C82382AB4840D0059B63C /* SceneDelegate.swift in Sources */,

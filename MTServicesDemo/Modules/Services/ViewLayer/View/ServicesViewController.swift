@@ -18,7 +18,11 @@ final class ServicesViewController: UIViewController {
     activityIndicator.style = .large
     return activityIndicator
   }()
-  private lazy var collectionView = ServicesCollectionView()
+  private lazy var collectionView: ServicesCollectionView = {
+    let collectionView = ServicesCollectionView()
+    collectionView.servicesDelegate = self
+    return collectionView
+  }()
 
   private var subscriptions = Set<AnyCancellable>()
 
@@ -56,6 +60,18 @@ final class ServicesViewController: UIViewController {
     viewModel.viewDidLoad()
   }
 
+}
+
+// MARK: - ServicesCollectionViewDelegate
+
+extension ServicesViewController: ServicesCollectionViewDelegate {
+  func didTapToActivatedService(with model: ActivatedServiceCellModel) {
+    viewModel.didTapToActivatedService(with: model)
+  }
+
+  func didTapToNonactivatedService(with model: NonactivatedServiceCellModel) {
+    viewModel.didTapToNonactivatedService(with: model)
+  }
 }
 
 // MARK: - Setup UI

@@ -7,9 +7,10 @@
 
 import UIKit
 
+@MainActor
 struct ServicesFactory {
   func makeViewController() -> ServicesViewController {
-      let viewModel = ServicesViewModel()
+    let viewModel = ServicesViewModel(servicesOperator: ServicesOperator())
       return ServicesViewController(viewModel: viewModel)
   }
 }
