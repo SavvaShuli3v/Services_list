@@ -133,14 +133,6 @@ final class ServicesCollectionView: UICollectionView {
     diffableDataSource.apply(snapshot, animatingDifferences: true)
   }
 
-//  override func layoutSubviews() {
-//    super.layoutSubviews()
-//    self.setupFlowLayout()
-//    if self.bounds.size != self.intrinsicContentSize {
-//      self.invalidateIntrinsicContentSize()
-//    }
-//  }
-
   func configureHeaders() {
     diffableDataSource.supplementaryViewProvider = { [weak self] (
       collectionView: UICollectionView,
