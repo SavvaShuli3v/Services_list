@@ -85,11 +85,7 @@ final class ServiceBoxCollectionViewCell: UICollectionViewCell {
     titleLabel.textColor = model.titleColor
     backgroundColor = model.color
     UIImage.getImage(with: model.imageId) { [weak self] image in
-      guard
-        let self,
-        let currentModel = self.model
-      else { return }
-
+      guard let self else { return }
       self.imageView.setImage(image)
     }
   }
