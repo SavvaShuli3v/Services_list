@@ -21,7 +21,7 @@ final class ImageFinder {
         completion(UIImage(named: id))
       } else {
 
-        let randomTime = Double.random(in: 0..<1)
+        let randomTime = Double.random(in: 2..<5)
 
         DispatchQueue.main.asyncAfter(deadline: .now() + randomTime) {
           self.cacheSet.insert(id)

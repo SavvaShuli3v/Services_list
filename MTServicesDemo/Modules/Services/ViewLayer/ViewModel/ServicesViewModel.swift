@@ -5,7 +5,6 @@
 //  Created by Savva Shuliatev on 15.09.2023.
 //
 
-import UIKit
 import Combine
 
 @MainActor
@@ -50,6 +49,8 @@ extension ServicesViewModel {
 }
 
 // MARK: - Data
+
+import UIKit
 
 extension Service {
   var nonactivatedServiceCellModel: NonactivatedServiceCellModel {
