@@ -87,7 +87,8 @@ final class ServiceBoxCollectionViewCell: UICollectionViewCell {
     UIImage.getImage(with: model.imageId) { [weak self] image in
       guard
         let self,
-        let currentModel = self.model
+        let currentModel = self.model,
+        currentModel.imageId == model.imageId
       else { return }
 
       self.imageView.setImage(image)
